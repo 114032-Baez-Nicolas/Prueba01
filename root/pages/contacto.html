@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <!-- HEADER con logo, título y navegación -->
+    <header>
+        <img src="../assets/logos/Image1.png" alt="Logo MotoCenter" class="logo">
+        <h1>Bienvenido a nuestra tienda</h1>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./info.html">Información</a></li>
+                <li><a href="./financiacion.html">Financiación</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN: Formulario de contacto para que el usuario deje sus datos y pueda ser asesorado -->
+    <main>
+        <section class="contactoSection">
+
+            <h2>Formulario de Contacto</h2>
+            <p>Envianos tus datos para poder encontrar un asesor que se adapte a tus necesidades.</p>
+
+            <form class="formulario">
+                <!-- Nombre -->
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" required>
+
+                <!-- Celular -->
+                <label for="celular">Celular:</label>
+                <input type="number" name="celular" id="celular" required>
+
+                <!-- Email -->
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+
+                <!-- select Asunto -->
+                <label for="asunto">Asunto:</label>
+                <select name="asunto" id="asunto" required>
+                    <option value="" disabled selected>Selecciona un asunto</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="sugerencia">Comprar</option>
+                    <option value="reclamo">Reclamo</option>
+                </select>
+
+                <!-- textarea -->
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje"></textarea>
+
+                <!-- Boton enviar y limpiar -->
+                <input class="boton-form" type="submit" value="Enviar"
+                    onclick="alert('Gracias por enviar tus datos! Pronto nos pondremos en contacto contigo..')">
+                <input class="boton-form" type="reset" value="Limpiar">
+            </form>
+
+        </section>
+    </main>
+
+    <!-- Footer con enlaces a redes sociales -->
+    <footer>
+        <table class="redesSociales">
+            <tr>
+                <td><img src="../assets/icons/facebook.png" alt="Facebook"></td>
+                <td><a href="https://www.facebook.com/share/12LyZ7VER8N/?mibextid=wwXIfr" target="_blank">Facebook</a>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="../assets/icons/Instagram.png" alt="Instagram"></td>
+                <td><a href="https://www.instagram.com/asesornicolasmotocenter?igsh=MXhvdHo5OHZ6eXRjZg=="
+                        target="_blank">Instagram</a></td>
+            </tr>
+            <tr>
+                <td><img src="../assets/icons/twitter.png" alt="X"></td>
+                <td><a href="https://x.com/?lang=es" target="_blank">X</a></td>
+            </tr>
+        </table>
+
+        <br>
+        <p>&copy; 2025 MotoCenter - Todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>

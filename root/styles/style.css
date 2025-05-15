@@ -1,0 +1,383 @@
+/* -------------------- RESET -------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -------------------- GLOBALES -------------------- */
+body {
+    background-color: #f8f8f8;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #333;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* -------------------- HEADER -------------------- */
+header {
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #eaeaea;
+}
+
+header img {
+    width: 20%;
+    display: flex;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+header ul {
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header li {
+    font-size: 18px;
+    list-style: none;
+}
+
+header a {
+    display: flex;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: #333;
+}
+
+header a:hover {
+    transform: scale(1.2);
+    color: #7b290c;
+}
+
+/* -------------------- FOOTER -------------------- */
+footer {
+    padding: 4px 0;
+    text-align: center;
+    border-top: 2px solid #eaeaea;
+}
+
+.redesSociales {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.redesSociales img {
+    width: 22px;
+    height: 22px;
+}
+
+.redesSociales a {
+    margin: 0 10px;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.redesSociales a:hover {
+    transform: scale(1.2);
+    color: #7b290c;
+}
+
+/* -------------------- INICIO -------------------- */
+.nuestrasMotos {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nuestrasMotos p {
+    width: 100%;
+    text-align: center;
+}
+
+.nuestrasMotos img {
+    width: 220px;
+    height: 170px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.nuestrasMotos img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.nuestrasMotos th,
+.nuestrasMotos td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* -------------------- INFO MOTOS -------------------- */
+.infoMotos {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.infoMotos p {
+    width: 100%;
+    text-align: center;
+}
+
+.infoMotos h2 {
+    font-size: 32px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.motoCard {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    padding: 20px;
+    align-items: center;
+    gap: 20px;
+}
+
+.motoCard img {
+    width: 260px;
+    height: 220px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.motoCard img:hover {
+    transform: scale(1.05);
+}
+
+.motoText {
+    flex: 1;
+    text-align: left;
+}
+
+.motoText h3 {
+    font-size: 22px;
+    color: #333;
+    text-align: center;
+}
+
+.motoText p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* -------------------- FINANCIACION -------------------- */
+.FinanciacionSection {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    text-align: left;
+}
+
+.FinanciacionSection p {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.FinanciacionContainer {
+    width: 360px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.FinanciacionContainer:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.FinanciacionContainer h3 {
+    font-size: 24px;
+}
+
+.FinanciacionContainer ul {
+    padding-left: 20px;
+}
+
+/* -------------------- CONTACTO -------------------- */
+.contactoSection {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contactoSection p {
+    width: 100%;
+    text-align: center;
+}
+
+.formulario {
+    width: 420px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.boton-form {
+    background-color: #5fa6b6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.boton-form:hover {
+    background-color: #333;
+    transform: scale(1.1);
+}
+
+/* -------------------- NOSOTROS -------------------- */
+.nosotrosSection {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.nosotrosSection p {
+    width: 100%;
+    text-align: center;
+}
+
+.nosotrosArticle {
+    width: 700px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.nosotrosArticle:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.nosotrosSection h3 {
+    font-size: 22px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.nosotrosSection ol {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.nosotrosSection li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.finalFrase {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 17px;
+    color: #5a5a5a;
+}
+
+
+/* -------------------- RESPONSIVE -------------------- */
+@media (max-width: 768px) {
+    header img {
+        width: 60%;
+    }
+
+    .FinanciacionContainer,
+    .formulario {
+        width: 90%;
+    }
+
+    .nuestrasMotos img {
+        width: 130px;
+        height: 110px;
+    }
+
+    .nuestrasMotos {
+        padding: 10px;
+        gap: 15px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .FinanciacionContainer h3 {
+        font-size: 20px;
+    }
+
+    .motoCard {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .motoText {
+        text-align: center;
+    }
+
+    .motoCard img {
+        width: 90%;
+    }
+
+}
